@@ -11,6 +11,6 @@ label = tk.Label(pagina, text="Você está aqui", font=("Arial", 12))
 pagina.pack(pady=10)
 
 btn = tk.Button(pagina, text="Fechar", command=pagina.destroy)
-btn.pack
+btn.pack(pady=5)
 
 pagina.loop()
