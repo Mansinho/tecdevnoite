@@ -69,32 +69,120 @@
 
 
 # EXERCICIO 3
-import tkinter as tk
-from tkinter import messagebox 
+# import tkinter as tk
+# from tkinter import messagebox 
 
-def numeros_inteiros():
-    try:
-        numero =int(entry_numero.get())
-        if numero < 0:
-            messagebox.showinfo("Resultado", "O número é negativo.")
+# def numeros_inteiros():
+#     try:
+#         numero =int(entry_numero.get())
+#         if numero < 0:
+#             messagebox.showinfo("Resultado", "O número é negativo.")
         
-        elif numero > 0:
-            messagebox.showinfo("Resultado", "O número é positivo.")
+#         elif numero > 0:
+#             messagebox.showinfo("Resultado", "O número é positivo.")
 
-        else:
-            messagebox.showinfo("Resultado", "Digite um número inteiro!")
+#         else:
+#             messagebox.showinfo("Resultado", "Digite um número inteiro!")
         
-    except ValueError:
-        messagebox.showerror("Erro", "Por favor, digite apenas números inteiros!")
+#     except ValueError:
+#         messagebox.showerror("Erro", "Por favor, digite apenas números inteiros!")
 
-root =  tk.Tk()
-root.title("Verificar números inteiros.")
-root.geometry("300x300")
+# root =  tk.Tk()
+# root.title("Verificar números inteiros.")
+# root.geometry("300x300")
 
-tk.Label(root, text="Digite um número inteiro: ").pack(pady=15)
-entry_numero = tk.Entry(root)
-entry_numero.pack(pady=10)
+# tk.Label(root, text="Digite um número inteiro: ").pack(pady=15)
+# entry_numero = tk.Entry(root)
+# entry_numero.pack(pady=10)
 
-tk.Button(root, text="Confirmar", command=numeros_inteiros).pack(pady=10)
+# tk.Button(root, text="Confirmar", command=numeros_inteiros).pack(pady=10)
 
-root.mainloop()
+# root.mainloop()
+
+
+
+# EXERCICIO 3
+# import tkinter as tk
+# from tkinter import messagebox
+# def verificar_numero():
+#     try:
+#         numero = float(entry_numero.get())
+#         if numero > 0:
+#             messagebox.showinfo(title="Resultado", message="Número positivo")
+
+#         elif numero < 0:
+#             messagebox.showinfo(title="Resultado", message="Número negativo")
+
+#         else:
+#             messagebox.showinfo(title="Resultado", message="Número igual a zero")
+#     except ValueError:
+#         messagebox.showerror(title="Erro", message="Digite um valor numérico válido.")
+
+# app = tk.Tk()
+# app.title("Identificador de Números")
+# app.geometry("600x400")
+
+# tk.Label(app, text="Digite um número:").pack(pady=5)
+# entry_numero = tk.Entry(app)
+# entry_numero.pack(pady=5)
+
+# tk.Button(app, text="Verificar", command=verificar_numero).pack(pady=20)
+
+# app.mainloop()
+
+
+# EXERCICIO 4
+# import tkinter as tk
+# from tkinter import messagebox
+# def verificar_senha():
+#     senha = entry_senha.get()
+#     if senha == '1234':
+#         messagebox.showinfo(title="Acesso", message="Acesso permitido")
+
+#     else:
+#         messagebox.showerror(title="Acesso", message="Acesso negado")
+
+# app = tk.Tk()
+# app.title("Sistema de Senha")
+# app.geometry("600x400")
+
+# tk.Label(app, text="Digite a senha:").pack(pady=5)
+# entry_senha = tk.Entry(app, show='*')
+# entry_senha.pack(pady=5)
+
+# tk.Button(app, text="Verificar Senha", command=verificar_senha).pack(pady=20)
+
+# app.mainloop()
+
+
+# EXERCICIO 5 
+# import tkinter as tk
+# from tkinter import messagebox
+# def mostrar_preco():
+#     opcao = entry_opcao.get()
+#     if opcao == '1':
+#         messagebox.showinfo(title="Cardápio", message="Pizza – R$ 30,00")
+
+#     elif opcao == '2':
+#         messagebox.showinfo(title="Cardápio", message="Hambúrguer – R$ 20,00")
+
+#     elif opcao == '3':
+#         messagebox.showinfo(title="Cardápio", message="Refrigerante – R$ 5,00")
+
+#     else:
+#         messagebox.showerror(title="Erro", message="Opção inválida")
+
+# app = tk.Tk()
+# app.title("Cardápio Interativo")
+# app.geometry("600x400")
+
+# tk.Label(app, text="Escolha uma opção do cardápio:").pack(pady=5)
+# tk.Label(app, text="1. Pizza – R$ 30,00").pack()
+# tk.Label(app, text="2. Hambúrguer – R$ 20,00").pack()
+# tk.Label(app, text="3. Refrigerante – R$ 5,00").pack(pady=5)
+# entry_opcao = tk.Entry(app)
+
+# entry_opcao.pack(pady=5)
+# tk.Button(app, text="Ver Preço", command=mostrar_preco).pack(pady=20)
+
+# app.mainloop()
